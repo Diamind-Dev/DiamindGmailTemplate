@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiamindMailpage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-</head>
 <style>
-    html{
+    .board{
         font-size: 22px;
-        background-color: #2c2c2c;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-    body{
-        display: flex;
-        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         width: 80%;
         height: auto;
         background-color: #232323;
@@ -28,13 +11,11 @@
     .diamindLogo{
         width: 110px;
         height: 69px;
-        position: relative;
-        margin: 15px 30px auto auto;
-        
+        margin-top:50px;
+        margin-left:40px;
     }
-
-    .linkBttns{
-        display: flex;
+    .content{
+        margin-top:50px;
     }
     .para{
         font-size: 0.78rem;
@@ -45,31 +26,39 @@
     }
     .linkBttns{
         display: flex;
-        gap: 30px;
-        margin: 200px auto 0 auto;
+        margin-left:30px;
+        margin-top:180px;
     }
+    .Bttn{
+      margin-left:20px;
+    } 
     .diamindName{
-        margin: 20px auto 15px auto;
+/*         width:77px; */
+        margin-left:50px;
+        margin-top:30px;
+        margin-bottom:100px;
         color: white;
         font-size: 1rem;
         font-weight: 400;
         font-family: 'Julius Sans One', sans-serif;
     }
 </style>
-<body>
-    <img class="diamindLogo" src="DiamindLogo.png" alt="Diamind logo">
-    <p class="para">Hello,<br/></p>
-    <p class="para">Thank you for submitting your product to Fab. Your product reference number is: (17946705)</p>
-    <p class="para">We have received your request, and will review it as soon as possible. Once we have reviewed it, we will be in touch with next steps.</p>
-    <p class="para"><br/><br/>Thanks,</p>
+<div class="board">
+    <img class="diamindLogo" src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/DiamindLogo.png" alt="Diamind logo">
+  <div class="content">
+    <p class="para">Hi Francesco Cappilli,<br/></p>
+    <p class="para">Thank you for reaching out with your question! I’d be happy to clarify how file format filtering works in our Android native file picker plugin.</p>
+    <p class="para"><br/>In short yes, users can still load different file formats even if they aren’t listed in the filters list, the filter primarily enforcing restrictions for selecting files. Here’s how it works:</p>
+    <p class="para">Example with a PNG filter: The picker will prioritize showing PNG files, but if no filter is required then by using another bluprint node (OpenFilePicker), all file types become visible and selectable.</p>
+    <p class="para">If you need to strictly limit selections to the filtered formats, additional validation (e.g., checking the file extension after selection) would be required. We’re happy to help implement this if needed!</p>
+    <p class="para"><br/>Let us know if you’d like further details or assistance. We appreciate your feedback!</p>
+    <p class="para"><br/><br/>Best regards,</p>
     <p class="para">Diamind group</p>
-
+  </div>  
     <div class="linkBttns">
-        <a href="https://diamind-dev.github.io/"><img src="ANFPBigIcon.svg" alt="ANFP logo"></a>
-        <a href="https://discord.gg/BAwBMPuHRe"><img src="DiscordBlue.png" alt="Discord logo"></a>
-        <a href="https://www.fab.com/listings/342e21f6-533d-4571-bbf2-e7ae3ec4d01e"><img src="FabIcon.png" alt="Fab logo"></a>
+        <a class="Bttn" href="https://diamind-dev.github.io/"><img src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/ANFPBigIcon.png" alt="ANFP logo"></a>
+        <a class="Bttn" href="https://discord.gg/BAwBMPuHRe"><img src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/DiscordBlue.png" alt="Discord logo"></a>
+        <a class="Bttn" href="https://www.fab.com/listings/342e21f6-533d-4571-bbf2-e7ae3ec4d01e"><img src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/FabIcon.png" alt="Fab logo"></a>
     </div>
-    <h1 class="diamindName">DIAMIND</h1>
-    
-</body>
-</html>
+    <img class="diamindName" src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/Diamindtxt.png" alt="Diamind">
+</div>
