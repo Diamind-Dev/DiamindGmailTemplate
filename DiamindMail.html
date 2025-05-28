@@ -9,10 +9,10 @@
         background-color: #232323;
     }
     .diamindLogo{
-        width: 110px;
-        height: 69px;
+        width: 191px;
+        height: 48px;
         margin-top:50px;
-        margin-left:40px;
+        margin-left:50px;
     }
     .content{
         margin-top:50px;
@@ -42,16 +42,28 @@
         font-weight: 400;
         font-family: 'Julius Sans One', sans-serif;
     }
+    .demoLink{
+        text-decoration: none;
+        color: #DB00FF;
+        font-size: 0.78rem;
+        font-weight: 350;
+        font-family:'Open Sans', sans-serif ;
+        /* padding: 0 110px 0 50px; */
+    }
 </style>
 <div class="board">
-    <img class="diamindLogo" src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/DiamindLogo.png" alt="Diamind logo">
+    <img class="diamindLogo" src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/894a081fc67180426b1c21d2f9be5f0f6c28ada0/PageElements/diamindCompleteIcon.svg" alt="Diamind logo">
   <div class="content">
-    <p class="para">Hi Francesco Cappilli,<br/></p>
-    <p class="para">Thank you for reaching out with your question! I’d be happy to clarify how file format filtering works in our Android native file picker plugin.</p>
-    <p class="para"><br/>In short yes, users can still load different file formats even if they aren’t listed in the filters list, the filter primarily enforcing restrictions for selecting files. Here’s how it works:</p>
-    <p class="para">Example with a PNG filter: The picker will prioritize showing PNG files, but if no filter is required then by using another bluprint node (OpenFilePicker), all file types become visible and selectable.</p>
-    <p class="para">If you need to strictly limit selections to the filtered formats, additional validation (e.g., checking the file extension after selection) would be required. We’re happy to help implement this if needed!</p>
-    <p class="para"><br/>Let us know if you’d like further details or assistance. We appreciate your feedback!</p>
+    <p class="para">Hi,<br/></p>
+    <p class="para">Apologies for the delayed response — we've taken some time to carefully review the UE-Assimp plugin to ensure compatibility.</p>
+    <p class="para"><br/>I'm happy to confirm that ANFP should be well-suited for your case. You can use ANFP to receive file paths for importing 3D models from both local storage and Google Drive.</p>
+    <p class="para">Here’s the suggested workflow to verify everything works smoothly:</p>
+    
+    <p class="para">1.Use the <a class="demoLink" href="https://diamind-dev.github.io/ANFPDemo.html">ANFP Demo Edition</a> to select an .ifc file from either local storage or Google Drive.<br/>
+                    2.Pass the returned path directly to the "Assimp Import Files" node from the UE-Assimp plugin.<br/>
+                    3.If the import works as expected, you can complete your pipeline using:</p>
+    <p class="para">The "File Picking Result" event dispatcher for local storage, and<br/>The "On Download Success" event dispatcher for Google Drive (both available in ANFP).</p>                   
+    <p class="para"><br/>Let us know if you run into any issues or if there’s anything else we can assist with!</p>
     <p class="para"><br/><br/>Best regards,</p>
     <p class="para">Diamind group</p>
   </div>  
@@ -62,3 +74,8 @@
     </div>
     <img class="diamindName" src="https://raw.githubusercontent.com/Diamind-Dev/DiamindGmailTemplate/refs/heads/main/PageElements/Diamindtxt.png" alt="Diamind">
 </div>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+
+
